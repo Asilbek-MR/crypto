@@ -1,0 +1,81 @@
+
+/* Global */
+
+
+#admin-menu {
+    display: none;
+}
+
+#admin-menu .menu {
+    border-radius: 0;
+    min-height: calc(100vh - 40px);
+    height: 100%;
+}
+
+#admin-main {
+    display: none;
+    min-height: 100vh;
+}
+
+#admin-main-segment {
+    border-radius: 0;
+}
+
+#admin-bottom-bar {
+    border-radius: 0;
+    margin-bottom: 0;
+}
+
+#admin-mobile-bar {
+    border-radius: 0;
+}
+
+
+.admin-page {
+    max-width: 1024px;
+}
+
+.color-input {
+    width: 88px !important;
+}
+
+/* Social Page */
+
+
+#admin-page-social .ui.label {
+    min-width: 150px;
+}
+
+
+/* Market Page */
+
+.col-labels {
+    min-width: 140px;
+}
+
+@media screen and (max-width: 1023px) {
+    #admin-main-form {
+        padding-top: 56px;
+    }
+}
+
+admin-multi-lang-input > .ui.input > select {
+    width: 200px !important;
+}
+
+@media screen and (max-width: 767px) {
+    admin-multi-lang-input .ui.input {
+        display: block;
+    }
+
+    admin-multi-lang-input > .ui.input > select {
+        margin-bottom: 4px;
+    }
+
+    admin-multi-lang-input > .ui.left.action.input > input {
+        width: 100% !important;
+        border-top-left-radius: .28571429rem !important;
+        border-bottom-left-radius: .28571429rem !important;
+        border-left-color: rgba(34,36,38,.15) !important;
+    }
+}

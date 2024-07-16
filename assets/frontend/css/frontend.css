@@ -1,0 +1,272 @@
+/* General */
+
+.cursor-pointer {
+    cursor: pointer;
+}
+.ui.label.transparent, .ui.label.transparent:hover {
+    background: rgba(0,0,0,0) !important;
+}
+th a, th a:hover {
+    color: #000;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 767px) {
+    .ui.table:not(.unstackable) > tfoot > tr {
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+    }
+
+    .ui.table > tfoot .menu {
+        font-size: 0.8em;
+    }
+}
+
+#top-menu {
+    border-radius: 0!important;
+    margin-bottom: 0!important;
+    min-height: 60px;
+}
+#top-menu .item {
+    padding: 0.5em 1em;
+    font-size: 1.1rem;
+}
+#top-menu .brand.item {
+    font-size: 1.5rem;
+}
+#top-menu .brand.item:hover {
+    background-color: initial;
+}
+
+#header-logo {
+    width: auto;
+    margin: 0;
+}
+
+#content {
+    padding-bottom: 100px;
+    min-height: 80vh;
+}
+
+#footer-main {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+#slide-up {
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    opacity: 0.5;
+}
+
+@media only screen and (max-width: 480px) {
+    #slide-up {
+        right: 20px;
+        bottom: 20px;
+    }
+}
+
+#gdpr-message {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 99999;
+    border-radius: 0;
+    margin: 0;
+}
+
+/* Market Page */
+
+.market-chart {
+    height: 70px;
+    width: 200px;
+}
+i.not-sorted {
+    color: #ddd;
+}
+
+@media only screen and (max-width: 991px) {
+    #market-table_wrapper div.DTFC_LeftBodyWrapper h5 > img {
+        display: block;
+    }
+    #market-table_wrapper div.DTFC_LeftBodyWrapper h5 > .content {
+        padding-left: 0;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #market .DTFC_LeftHeadWrapper, #market .DTFC_LeftBodyWrapper {
+        max-width: 140px;
+    }
+}
+
+/* Press Page */
+
+#press-items .item .description * {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Mining Equipment Page */
+
+#mining-wrapper {
+    max-width: 1200px;
+}
+#mining-form .title {
+    font-weight: 600;
+    font-size: 1.1em;
+}
+#mining-form .inline.fields {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+#mining-form .inline.fields > .field {
+    margin-bottom: 10px;
+}
+#mining-table.clickable > tbody > tr {
+    cursor: pointer;
+}
+#mining-table td > .target-name {
+    padding-bottom: 6px;
+}
+#mining-table td.image > img {
+    max-width: 100%;
+    min-width: 150px;
+}
+
+@media only screen and (max-width: 991px) {
+    #mining-form .inline.fields > .field {
+        width: 25% !important;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    #mining-form .inline.fields > .field {
+        width: 33% !important;
+    }
+    #mining-table thead {
+        display: none;
+    }
+    #mining-table td.name {
+        text-align: center;
+    }
+    #mining-table td.image > img {
+        width: 250px;
+    }
+}
+
+@media only screen and (max-width: 479px) {
+    #mining-form .inline.fields > .field {
+        width: 50% !important;
+    }
+
+}
+
+
+
+/* Converter Page */
+
+
+/* Currency Page */
+
+#currency-links .heading-label {
+    width: 140px;
+}
+#currency-converter .column {
+    max-width: 250px;
+}
+
+#currency-chart-wrapper {
+    margin-bottom: 50px;
+    margin-top: 50px;
+    text-align: right;
+}
+#currency-chart {
+    width: 100%;
+    height: 70vh;
+}
+#currency-description {
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+#currency-tickers .ui.table tbody tr td:nth-child(3) a {
+    display: inline-block;
+    width: 250px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@media screen and (max-width: 767px) {
+    #currency-header-col {
+        text-align: center;
+    }
+    #currency-converter .ui.grid {
+        width: auto;
+        margin-left: 0!important;
+        margin-right: 0!important;
+    }
+    #currency-converter .row {
+        margin: 0;
+        padding: 0;
+        flex-direction: column;
+    }
+    #currency-converter .row .column {
+        width: 100%!important;
+        max-width: 100%!important;
+        margin: 0 0!important;
+        padding: 1rem 1rem!important;
+    }
+    #currency-converter .ui.grid .vertical.divider {
+        display: none;
+    }
+    #currency-links .ui.horizontal.list {
+        display: block;
+    }
+    #currency-links .ui.horizontal.list > .item {
+        display: block;
+        margin-left: 0;
+    }
+    #currency-links .ui.horizontal.list > .item > * {
+        width: 100%;
+        max-width: 100%;
+    }
+    #currency-tickers .ui.table:not(.unstackable) thead {
+        display: none;
+    }
+    #currency-tickers .ui.table:not(.unstackable) td {
+        text-align: left;
+    }
+}
+
+
+/* ICOs Page */
+
+#icos-list td img {
+    max-width: 100%;
+}
+#icos-list tr.hide {
+    display: none !important;
+}
+
+/* Exchanges Page */
+
+#exchange-table {
+    margin-top: 36px;
+}
+#exchange-table tbody td.volume {
+    font-weight: 500;
+    font-size: 1.2em;
+}
+
+@media screen and (max-width: 767px) {
+    #exchange-table:not(.unstackable) thead {
+        display: none;
+    }
+    #exchange-table:not(.unstackable) td {
+        text-align: left;
+    }
+}
+
+/* Trends Page */
